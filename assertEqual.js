@@ -18,3 +18,10 @@ const assertEqual = (actual, expected) => {
 assertEqual("lighthouse Labs", "Bootcamp");
 assertEqual(1, 1); 
 
+// console.assert() code:
+
+// const sumBuggy = function(a, b) { 
+//   return a * b;
+// }
+
+// console.assert(sumBuggy(1, 2) === 3); // fails, because bug!
