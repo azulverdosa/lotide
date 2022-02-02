@@ -8,7 +8,7 @@
 //call function below declaration to ensure accuracy
 
 //exicution:
-const assertEqual = (actual, expected) => {  
+const assertArraysEqual = (actual, expected) => {  
   console.log(
     JSON.stringify(actual) === JSON.stringify(expected)    
     ? "Assertion Passed: " + String.fromCodePoint(0x2705) + ` ${actual} === ${expected}`
@@ -18,10 +18,10 @@ const assertEqual = (actual, expected) => {
 
 //test cases:
 console.log('--- assertEqual');
-assertEqual("lighthouse Labs", "Bootcamp");
-assertEqual(1, "1"); 
-assertEqual([1, 2, 3], [1, 2, 3]);
-assertEqual([1, 2, 3], [3, 2, 1]);
-assertEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertEqual(["1", "2", "3"], ["1", "2", 3]);
-assertEqual(true, false);
+assertArraysEqual("lighthouse Labs", "Bootcamp"); //false
+assertArraysEqual(1, "1");  //false
+assertArraysEqual([1, 2, 3], [1, 2, 3]); //true
+assertArraysEqual([1, 2, 3], [3, 2, 1]); //false
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); //true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); //false
+assertArraysEqual(true, false); //false
