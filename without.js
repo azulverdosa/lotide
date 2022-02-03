@@ -48,4 +48,4 @@ const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
-//NOTE: unsure why eqArrays function was needed
+//NOTE: unsure why eqArrays function was needed until Benny fixed it for me
