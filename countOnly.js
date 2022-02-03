@@ -30,6 +30,12 @@ const countOnly = (allItems, itemsToCount) => {
   return results;
 }
 // NOTE: thie whole thing was very challenging and had to ask for Andy's help for the whole function
+//This is the suggested answer for the if statement:
+  // if (results[item]) {
+  //   results[item] += 1;
+  // } else {
+  //   results[item] = 1;
+  // }
 const firstNames = [
   "Karl",
   "Salima",
