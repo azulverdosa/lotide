@@ -8,9 +8,13 @@
 //call function below declaration to ensure accuracy
 
 //exicution:
-const assertArraysEqual = (actual, expected) => {  
+const eqArrays = (arr1, arr2) => {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
+const assertArraysEqual = (actual, expected) => {
   console.log(
-    JSON.stringify(actual) === JSON.stringify(expected)    
+    eqArrays(actual, expected)
     ? "Assertion Passed: " + String.fromCodePoint(0x2705) + ` ${actual} === ${expected}`
     : "Assertion Failed: " + String.fromCodePoint(0x274C) + ` ${actual} !== ${expected}`
   );

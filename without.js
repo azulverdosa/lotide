@@ -14,17 +14,17 @@
   //if included - filter out
 //use assertArraysEqual as test to compare copy of source string to string used in the without function to check for equality
 
-//exicution:
+//execution:
+const eqArrays = (arr1, arr2) => {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
 const assertArraysEqual = (actual, expected) => {
   console.log(
-    JSON.stringify(actual) === JSON.stringify(expected)
+    eqArrays(actual, expected)
     ? "Assertion Passed: " + String.fromCodePoint(0x2705) + ` ${actual} === ${expected}`
     : "Assertion Failed: " + String.fromCodePoint(0x274C) + ` ${actual} !== ${expected}`
   );
-}
-
-const eqArrays = (arr1, arr2) => {
-  return JSON.stringify(arr1) === JSON.stringify(arr2);
 }
 
 const without = (source, itemsToRemove) => {
