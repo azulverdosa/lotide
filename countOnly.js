@@ -29,7 +29,7 @@ const countOnly = (allItems, itemsToCount) => {
   }
   return results;
 }
-
+// NOTE: thie whole thing was very challenging and had to ask for Andy's help for the whole function
 const firstNames = [
   "Karl",
   "Salima",
