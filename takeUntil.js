@@ -11,22 +11,26 @@ const assertArraysEqual = (actual, expected) => {
 }
 
 const takeUntil = (array, callback) => {
-  
+  let sliceIndex = array.map(callback);
+
+  return array.slice(0, sliceIndex.indexOf(true));
 }
 
-const words = ['Piggy', 'Andy', 'Meow', 'MiniMeow', 'Mermeow', 'AvaCado'];
-const map1 = (words.map(word => word[0]));
+// const words = ['Piggy', 'Andy', 'Meow', 'MiniMeow', 'Mermeow', 'AvaCado'];
+// const map1 = (words.map(word => word[0]));
 
 
 //test cases:
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
-// [ 1, 2, 5, 7, 2 ]
+assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
+//result should be [ 1, 2, 5, 7, 2 ]
 
 console.log('---');
 
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
-//[ 'I\'ve', 'been', 'to', 'Hollywood' ]
+assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ])
+//result should be [ 'I\'ve', 'been', 'to', 'Hollywood' ]
