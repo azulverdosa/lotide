@@ -1,6 +1,6 @@
 {
   "name": "@azulverdosa/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library based on lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
