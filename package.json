@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@azulverdosa/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "library based on lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/azulverdosa/lotide.git"
   },
-  "author": "",
+  "author": "Ava Elise",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/azulverdosa/lotide/issues"
