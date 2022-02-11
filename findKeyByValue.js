@@ -61,4 +61,7 @@ assertEqual(findKeyByValue(bestDogNamesByBreed, true), "beagle");
 assertEqual(findKeyByValue(bestDogNamesByBreed, "Ava"), undefined);
 
 
-//NOTE: this one too a minute, but I actually go ti :)
+//NOTE: this one took a minute, but I actually go it :)
+
+module.exports = findKeyByValue;
+

@@ -38,3 +38,6 @@ assertArraysEqual(letterPositions(piggy).g, [6, 7]);
 assertArraysEqual(letterPositions(piggy).e, [2, 15, 18]);
 assertArraysEqual(letterPositions(piggy).T, [0]);
 assertArraysEqual(letterPositions(piggy).P, [4]);
+
+module.exports = letterPositions;
+

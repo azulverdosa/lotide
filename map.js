@@ -32,3 +32,6 @@ assertArraysEqual(map(numbers, number => number * 2), [2,  4,  6, 8, 10, 12, 14]
 
 const map1 = (words.map(word => word[0], words.map(word => word.toUpperCase()), numbers.map(number => number * 2)));
 console.log(map1);
+
+module.exports = map;
+

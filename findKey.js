@@ -27,3 +27,6 @@ const cb = value => value.stars === 2;
 
 
 assertEqual(findKey(solar, cb), 'noma');
+
+module.exports = findKey;
+

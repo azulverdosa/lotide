@@ -49,3 +49,6 @@ without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 //NOTE: unsure why eqArrays function was needed until Benny fixed it for me
+
+module.exports = without;
+
